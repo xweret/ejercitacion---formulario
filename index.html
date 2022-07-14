@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de formulario</title>
+</head>
+<body>
+
+    <!-- 
+1) Crear un html y asociarlo a javascript
+2) Crear un formulario con 4 campos:
+    a) Nombre
+    b) Mail
+    c) Telefono
+    d) Mensaje
+                -->
+
+    <section>
+        <form action="" method="post" class="formulario" id="form">
+        <input type="text" id="user-name">
+        <label for="user-name">ingrese su usuario</label>
+        <input type="mail" id="user-email">
+        <label for="user-email">ingrese su email</label>
+        <input type="tel" id="user-number">
+        <label for="user-number">ingrese su numero</label>
+        <textarea name="user-msg" id="mensage" cols="30" rows="10" placeholder="escriba"></textarea>
+        <input type="submit" value="enviar" class="enviar">
+
+        </form>
+
+        <style>
+            label{
+                background: navy;
+                color: white;
+            }
+            .enviar {
+                color: white;
+                background-color: navy;
+                border-radius: 20%;
+            }
+            .form {
+                color: navy;
+            }
+            section{
+                display: inline-block;
+            }
+            
+        </style>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
