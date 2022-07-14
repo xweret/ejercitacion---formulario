@@ -16,19 +16,20 @@
     c) Telefono
     d) Mensaje
                 -->
-
-    <section>
-        <form action="" method="post" class="formulario" id="form">
-        <input type="text" id="user-name">
-        <label for="user-name">ingrese su usuario</label>
-        <input type="mail" id="user-email">
-        <label for="user-email">ingrese su email</label>
-        <input type="tel" id="user-number">
-        <label for="user-number">ingrese su numero</label>
-        <textarea name="user-msg" id="mensage" cols="30" rows="10" placeholder="escriba"></textarea>
-        <input type="submit" value="enviar" class="enviar">
-
-        </form>
+                <body>
+                    <form id="contacto_usuario" action="" method="post">
+                        <label for="nombre">Tu nombre: </label>
+                        <input  id="nombre" type="text">
+                        <label for="mail">Tu mail: </label>
+                        <input  id="mail" type="text">
+                        <label for="telefono">Tu telefono: </label>
+                        <input  id="telefono" type="number" inputmode="tel">
+                        <label for="mensaje">Tu  mensaje: </label>
+                        <textarea  id="mensaje" type="text"></textarea>
+                        <input type="submit">
+                    </form>
+                </body>
+                </html>
 
         <style>
             label{
@@ -40,13 +41,10 @@
                 background-color: navy;
                 border-radius: 20%;
             }
-            .form {
+            form {
                 color: navy;
             }
-            section{
-                display: inline-block;
-            }
-            
+
         </style>
     </section>
     <script src="script.js"></script>
